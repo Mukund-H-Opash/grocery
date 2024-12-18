@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Clocks Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #121212;  /* Dark background */
+            color: #fff;  /* Light text */
+        }
+        .clock-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .clock {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            font-size: 24px;
+            width: 200px;
+            margin: 10px;
+        }
+        .timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        label, input {
+            margin: 10px;
+            font-size: 16px;
+            color: #fff;
+        }
+        input {
+            padding: 8px;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+            color: #fff;
+        }
+        input[type="time"] {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="clock-container">
+    <div id="indian-clock-12" class="clock">
+        <h2>Indian Time (12-hour)</h2>
+        <p id="indian-time-12">Loading...</p>
+    </div>
+    <!-- <div id="timer-clock" class="clock">
+        <h2>Timer Clock</h2>
+        <div class="timer">
+            <label>Start Time: </label>
+            <input type="time" id="start-time">
+            <label>End Time: </label>
+            <input type="time" id="end-time">
+        </div>
+        <p id="timer">Timer: 00:00</p>
+    </div> -->
+    <div id="us-clock-12" class="clock">
+        <h2>US Time (12-hour)</h2>
+        <p id="us-time-12">Loading...</p>
+    </div>
+    <div id="indian-clock-24" class="clock">
+        <h2>Indian Time (24-hour)</h2>
+        <p id="indian-time-24">Loading...</p>
+    </div>
+</div>
+
+<script>
+    function updateIndianClock12() {
+        const indianTime12 = new Date().toLocaleString('en-IN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+        document.getElementById('indian-time-12').textContent = indianTime12;
+    }
+
+    function updateUSTime12() {
+        const usTime12 = new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true, timeZone: 'America/New_York' });
+        document.getElementById('us-time-12').textContent = usTime12;
+    }
+
+    function updateIndianClock24() {
+        const indianTime24 = new Date().toLocaleString('en-IN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
+        document.getElementById('indian-time-24').textContent = indianTime24;
+    }
+
+    function startTimer() {
+        const startTime = document.getElementById('start-time').value;
+        const endTime = document.getElementById('end-time').value;
+
+        if (startTime && endTime) {
+            const start = new Date(`2024-12-05T${startTime}:00`);
+            const end = new Date(`2024-12-05T${endTime}:00`);
+            const duration = (end - start) / 1000; // in seconds
+
+            let timerInterval = setInterval(function() {
+                const currentTime = new Date();
+                const timeLeft = end - currentTime;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById('timer').textContent = "Time's up!";
+                } else {
+                    let minutes = Math.floor(timeLeft / 60000);
+                    let seconds = Math.floor((timeLeft % 60000) / 1000);
+                    document.getElementById('timer').textContent = `Timer: ${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+                }
+            }, 1000);
+        }
+    }
+
+    setInterval(updateIndianClock12, 1000);
+    setInterval(updateUSTime12, 1000);
+    setInterval(updateIndianClock24, 1000);
+
+    document.getElementById('start-time').addEventListener('change', startTimer);
+    document.getElementById('end-time').addEventListener('change', startTimer);
+</script>
+
+</body>
+</html>
