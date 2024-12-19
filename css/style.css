@@ -144,7 +144,7 @@ body {
 .serch-bar {
   background-color: white;
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #ef682e;
   border-radius: 5px;
   max-width: 500px;
   min-width: 300px;
@@ -2194,6 +2194,7 @@ h2 {
 .coming-soon-wrapper {
   display: flex;
   min-height: 100vh;
+  padding: 100px;
 }
 
 .coming-soon-left {
@@ -2237,16 +2238,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h1 {
+.coming-soon-left h1 {
   color: #ef682e;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-p {
+.coming-soon-left p {
   color: #333;
   margin-bottom: 1.5rem;
-}
+} 
 
 .notify-form {
   margin-bottom: 2rem;
@@ -2363,7 +2364,7 @@ p {
   font-size: 0.9rem;
 }
 
-/* Contact Form */
+/* 
 .contact-form {
   width: 100%;
   background-color: #fff;
@@ -2416,6 +2417,84 @@ p {
 .contact-form button:hover {
   background-color: #245b3d;
 }
+*/
+
+.contact-form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-form .contact-badge {
+  display: inline-block;
+  background-color: #5eb85e;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contact-form h3 {
+  color: #f45a3c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5eb85e;
+}
+
+.contact-form button {
+  background-color: #5eb85e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #4da94d;
+}
+
+@media (max-width: 768px) {
+  .contact-form .form-row {
+    flex-direction: column;
+  }
+}
+
+
 
 /* Map Section */
 .contact-map {  
