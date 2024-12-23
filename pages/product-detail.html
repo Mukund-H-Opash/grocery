@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Product Detail</title>
+    <link
+      rel="icon"
+      href="../images/troo-grocery-logo.svg"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organic Grocery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -270,9 +276,123 @@
           </div>
         </div>
       </div>
-    
-    
 
+      <div class="pd-container">
+      
+        <div class="pd-top-section">
+          <div class="pd-image">
+            <img
+              src="../images/image-Orange.svg"
+              alt="Fresh Yellow Orange"
+            />
+            <div class="pd-thumbnail">
+              <img src="../images/pd-img-big.svg" alt="thumb1" />
+              <img src="../images/pd-img-big.svg" alt="thumb2" />
+              <img src="../images/pd-img-big.svg" alt="thumb3" />
+            </div>
+          </div>
+          <div class="pd-description">
+            <h2>Fresh Yellow Orange</h2>
+            <p class="pd-price">
+              <span class="pd-old-price">$10.00</span> $8.00
+            </p>
+            <p class="pd-stock">Availability: <span>In Stock</span></p>
+            <p class="pd-details">
+              There are many varieties of yellow oranges, cultivated in warm
+              climates, bringing a refreshing taste.
+            </p>
+            <div class="pd-options">
+              <label>QTY: <input type="number" value="1" /></label>
+              <label
+                >Size:
+                <select>
+                  <option>Medium</option>
+                  <option>Large</option>
+                </select>
+              </label>
+              <label
+                >Weight:
+                <select>
+                  <option>1kg</option>
+                  <option>2kg</option>
+                </select>
+              </label>
+            </div>
+            <button class="pd-add-to-cart">Add to Cart</button>
+            <p>SKU: 0230023</p>
+          </div>
+        </div>
+
+        
+        <div class="pd-review-section">
+          <div class="pd-review-tabs">
+            <button class="pd-tab-btn active" data-target="description">
+              Description
+            </button>
+            <button class="pd-tab-btn" data-target="review">Review (1)</button>
+            <button class="pd-tab-btn" data-target="info">
+              Additional Information
+            </button>
+          </div>
+          <div class="pd-tab-content pd-active" id="description">
+            <p>
+              Lower temperature washes and delicate spin cycles care better for
+              your product...
+            </p>
+          </div>
+          <div class="pd-tab-content" id="review">
+            <p>
+              <strong>User Review:</strong> "Absolutely loved the product, fresh
+              and tasty!"
+            </p>
+          </div>
+          <div class="pd-tab-content" id="info">
+            <p>
+              <strong>Additional Info:</strong> Best served chilled. Store in a
+              cool place.
+            </p>
+          </div>
+        </div>
+
+       
+        <div class="pd-related-products">
+          <h3>Related Products</h3>
+          <div class="pd-product-grid">
+            <div class="pd-product-item">
+              <img
+                src="../images/image-Organic-Cabbage.svg"
+                alt="Organic Cabbage"
+              />
+              <h4>Organic Cabbage</h4>
+              <p>$7.00</p>
+            </div>
+            <div class="pd-product-item">
+              <img
+                src="../images/image-red-strawbarry.svg"
+                alt="Red Strawberry"
+              />
+              <h4>Red Strawberry</h4>
+              <p>$5.00</p>
+            </div>
+            <div class="pd-product-item">
+              <img
+                src="../images/pd-carrat.svg"
+                alt="Natural Carrot"
+              />
+              <h4>Natural Carrot</h4>
+              <p>$5.00</p>
+            </div>
+            <div class="pd-product-item">
+              <img
+                src="../images/image-Sweet-Mango.svg"
+                alt="Organic Mango"
+              />
+              <h4>Organic Mango</h4>
+              <p>$10.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="newsletter-section">
         <footer class="newsletter">
@@ -299,7 +419,6 @@
         </footer>
       </section>
 
-      <!-- Footer Section -->
       <div class="footer-section">
         <div class="footer-top">
           <div class="footer-contact">

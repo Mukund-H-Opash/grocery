@@ -495,3 +495,18 @@ git push origin main
 
 1)i think you forgot to add images so add it also 2) in  categories thre is left side name and right side number so the number you ca n see its images soadd it also 3) in tags there are more tags so add it 4)in reted blogs also there is image 5) in blogs there is 3 image so add it also any test style here  so blog have much more discription so add it also 5)
  ther is delivary banner also so make it  7)comment section 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ add details like working eith google hybridly and part time also full time employee at Opash software and technicle executiv at labgrownbox inc (Ny usa)
