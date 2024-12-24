@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organic Grocery</title>
+    <title>Checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -270,9 +270,155 @@
           </div>
         </div>
       </div>
-    
-    
 
+      <div class="ck-container">
+        
+        <div class="ck-navigation">
+          <div class="ck-nav-item active">
+            <img src="../images/shop-icon.svg" alt="Shop Icon" />
+            <span>Shop Page</span>
+          </div>
+          <div class="ck-nav-item">
+            <img src="../images/shopping-cart-icon.svg" alt="Cart Icon" />
+            <span>My Cart</span>
+          </div>
+          <div class="ck-nav-item">
+            <img src="../images/ckekout-icon.svg" alt="Checkout Icon" />
+            <span>Checkout</span>
+          </div>
+        </div>
+
+        
+        <div class="ck-main-content">
+          
+          <div class="ck-billing-details">
+            <h3>Billing details</h3>
+            <form class="ck-form">
+              <div class="ck-form-row">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="ck-input"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="ck-input"
+                  required
+                />
+              </div>
+              <div class="ck-form-row">
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  class="ck-input"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="ck-input"
+                  required
+                />
+              </div>
+              <div class="ck-form-row">
+                <input
+                  type="text"
+                  placeholder="Country / Region"
+                  class="ck-input"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Street address"
+                  class="ck-input"
+                  required
+                />
+              </div>
+              <div class="ck-form-row">
+                <input
+                  type="text"
+                  placeholder="Town / City"
+                  class="ck-input"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="State"
+                  class="ck-input"
+                  required
+                />
+              </div>
+              <div class="ck-form-row">
+                <input
+                  type="text"
+                  placeholder="ZIP Code"
+                  class="ck-input"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Company Name (optional)"
+                  class="ck-input"
+                />
+              </div>
+              <div class="ck-form-row">
+                <textarea
+                  placeholder="Order notes (optional)"
+                  class="ck-textarea"
+                ></textarea>
+              </div>
+              <div class="ck-form-row ck-checkbox-row">
+                <input type="checkbox" id="different-address" />
+                <label for="different-address"
+                  >Ship to a different address?</label
+                >
+              </div>
+            </form>
+          </div>
+
+          <!-- Order Details -->
+          <div class="ck-order-details">
+            <h3>Your order</h3>
+            <div class="ck-order-summary">
+              <div class="ck-product">
+                <span>Fresh Mango - 2 Kg x 1</span>
+                <span>$20.00</span>
+              </div>
+              <div class="ck-product">
+                <span>Organic Vegetables 5 Kg x 1</span>
+                <span>$40.00</span>
+              </div>
+              <div class="ck-summary">
+                <span>Subtotal</span>
+                <span>$480.00</span>
+              </div>
+              <div class="ck-summary">
+                <span>Shipping</span>
+                <span>$10.00</span>
+              </div>
+              <div class="ck-summary ck-total">
+                <span>Grand Total</span>
+                <span>$508.00</span>
+              </div>
+            </div>
+            <div class="ck-payment-methods">
+              <label
+                ><input type="radio" name="payment" required /> Direct bank
+                transfer</label
+              >
+              <label
+                ><input type="radio" name="payment" /> Check payments</label
+              >
+              <label
+                ><input type="radio" name="payment" /> Cash on delivery</label
+              >
+            </div>
+            <button class="ck-btn">Place Order</button>
+          </div>
+        </div>
+      </div>
 
       <section class="newsletter-section">
         <footer class="newsletter">
@@ -299,7 +445,6 @@
         </footer>
       </section>
 
-      <!-- Footer Section -->
       <div class="footer-section">
         <div class="footer-top">
           <div class="footer-contact">

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Organic Grocery</title>
+        <title>sign up</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -20,9 +20,32 @@
       </head>
 <body>
    
-    <div >
-
-        
+  <div class="su-container">
+    <div class="su-wrapper">
+      <div class="su-image-section">
+        <img src="../images/log-sign-img.svg" alt="Vegetables on Table">
+        <div class="su-logo">
+          <img src="../images/sign-logo-troo.svg" alt="Logo">
+          
+        </div>
+      </div>
+      <div class="su-form-section">
+        <h2 class="su-title">Welcome to TRoo Grocery</h2>
+        <p class="su-subtitle">Create your account by filling the form below</p>
+        <form class="su-form">
+          <input type="text" placeholder="Full Name" class="su-input" required>
+          <input type="email" placeholder="Email" class="su-input" required>
+          <input type="password" placeholder="Password" class="su-input" required>
+          <input type="password" placeholder="Confirm Password" class="su-input" required>
+          <div class="su-checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+          <button type="submit" class="su-btn">Sign Up Now</button>
+        </form>
+      </div>
     </div>
+  </div>
+  
 </body>
 </html>

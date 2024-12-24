@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Organic Grocery</title>
+        <title>login</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -20,9 +20,30 @@
       </head>
 <body>
    
-    <div >
-
-        
+  <div class="log-container">
+    <div class="log-wrapper">
+      <div class="log-image-section">
+        <img src="../images/log-sign-img.svg" alt="Vegetables on Table">
+        <div class="log-logo">
+          <img src="../images/sign-logo-troo.svg" alt="Logo">
+        </div>
+      </div>
+      <div class="log-form-section">
+        <h2 class="log-title">Welcome back</h2>
+        <p class="log-subtitle">A whole new online shopping journey starts right here.</p>
+        <form class="log-form">
+          <input type="email" placeholder="Email Address" class="log-input" required>
+          <input type="password" placeholder="Password" class="log-input" required>
+          <div class="log-checkbox">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="log-btn">Login Now</button>
+          <a href="#" class="log-forgot">Forgot password?</a>
+        </form>
+      </div>
     </div>
+  </div>
+  
 </body>
 </html>
