@@ -1560,7 +1560,6 @@ ul li a:hover {
 }
 
 .banner-image {
-  width: 100%;
   height: auto;
   margin-top: 15px;
 }
@@ -3951,7 +3950,7 @@ main {
   }
 
   .ck-order-details {
-    width: 100%;
+    width: calc(100% - 40px);
   }
 
   .SC-cart-section{
@@ -4059,7 +4058,20 @@ main {
     min-width: calc(46% - 10px);
 
   }
+  .banner-image{
+    width: 40%;
+  
+  }
+  .delivery-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .shop-now{
+    align-self: center;
+    width: 15%
+  }
   .app-image {
     display: flex;
     justify-content: center;
@@ -4152,6 +4164,7 @@ main {
 /* max-width: 767px */
 @media screen and (max-width: 768px) {
 
+ 
   .ck-form-row {
     flex-direction: column;
   }
@@ -4518,6 +4531,10 @@ main {
 
 /* max-width: 480px */
 @media screen and (max-width: 480px) {
+  .pd-review-tabs {
+    flex-direction: column;
+  }
+
 
   .log-title {
     font-size: 18px;
