@@ -304,7 +304,7 @@ body {
 /* Menu Wrapper */
 .menu-wrap {
   background-color: white;
-  padding: 10px 100px;
+  padding: 10px 80px;
   display: flex;
   justify-content: space-between;
   /* position: relative; */
@@ -525,7 +525,7 @@ ul li a:hover {
   color: #609e45;
   padding: 0px 0px 10px;
   margin: 0px;
-  
+  text-align: center;
 }
 
 
@@ -1788,7 +1788,17 @@ ul li a:hover {
   width: 300px;
   border: 1px solid #83ec87cc;
   border-radius: 5px;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+
 }
+
+
+.email-input:focus {
+  border: 1.5px solid #4caf50;
+}
+
+
 
 .subscribe-button {
   padding: 10px 20px;
@@ -2644,11 +2654,14 @@ main {
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
+
 }
 
-.comment-section label, .comment-section input, .comment-section textarea {
+.comment-section label, 
+.comment-section input, 
+.comment-section textarea {
   display: block;
-  width: 100%;
+  width: calc(100% - 40px);
   margin-bottom: 10px;
 }
 

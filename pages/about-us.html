@@ -24,6 +24,19 @@
 
   <body>
     <div class="header">
+      <script>
+        fetch("./header.html")  
+          .then(response => response.text())  
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          })
+          .catch(error => {
+            console.error('Error loading the navbar:', error);
+          });
+      </script>
+  
+    </div>
+    <!-- <div class="header">
       <div class="top-header">
         <div class="text-left">
           Welcome to the best Troo Organic Grocery Store
@@ -122,7 +135,7 @@
                     <li><a href="#">Shop Left Sidebar</a></li>
                   </ul>
                 </li>
-                <!-- chnage class name submenu-shop-types to submenu-woocommerce-pages -->
+                
                 <li class="submenu-shop-types">
                   <a href="#">Product Types</a>
                   <img
@@ -147,7 +160,7 @@
                 <li class="menu-product-tag">
                   <a href="#">Product Tag</a>
                 </li>
-                <!-- chnage class name submenu-shop-types to submenu-woocommerce-pages -->
+                
                 <li class="submenu-shop-types">
                   <a href="#">WooCommerce Pages</a>
                   <img
@@ -247,7 +260,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="main-content">
       <div class="content ab-content">
