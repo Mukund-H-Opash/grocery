@@ -520,6 +520,7 @@ ul li a:hover {
 .read-more strong{
   color: black;
 }
+
 .promo-description h2 {
   font-size: 40px;
   color: #609e45;
@@ -528,6 +529,9 @@ ul li a:hover {
   text-align: center;
 }
 
+.promo-description-01 h2{
+  text-align: left;
+}
 
 .promo-description p {
   font-size: 18px;
@@ -3952,6 +3956,10 @@ main {
 
   .image-wrap-02 .app-image-00 {
     max-width: calc(121% - 10px);
+  }
+
+  .promo-description-01 h2{
+    text-align: center;
   }
 }
 
